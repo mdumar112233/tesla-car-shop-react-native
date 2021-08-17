@@ -1,5 +1,6 @@
 import React from 'react'
 import {ImageBackground, StyleSheet, Text, View } from 'react-native'
+import StyleButton from '../InfoButton/StyleButton';
 import { styles } from './Styles';
 
 export default function CarItems() {
@@ -12,6 +13,18 @@ export default function CarItems() {
           <Text style={styles.title}>Model S</Text>
           <Text style={styles.subtitle}>Starting at $69,432</Text>
         </View>
+
+        <StyleButton 
+          type='primary' 
+          content={'Custom Order'}
+          onPress={()=> console.log('custom order')}  
+        />
+
+      <StyleButton 
+          type='secondary' 
+          content={'Existing Inventory'}
+          onPress={()=> console.log('Existing')}  
+        />
     </View>
     )
 }
