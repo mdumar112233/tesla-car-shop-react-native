@@ -14,17 +14,19 @@ export default function CarItems() {
           <Text style={styles.subtitle}>Starting at $69,432</Text>
         </View>
 
-        <StyleButton 
-          type='primary' 
-          content={'Custom Order'}
-          onPress={()=> console.log('custom order')}  
-        />
+        <View style={styles.buttonContainer}>
+          <StyleButton 
+            type='primary' 
+            content={'Custom Order'}
+            onPress={()=> console.log('custom order')}  
+          />
 
-      <StyleButton 
-          type='secondary' 
-          content={'Existing Inventory'}
-          onPress={()=> console.log('Existing')}  
-        />
+         <StyleButton 
+            type='secondary' 
+            content={'Existing Inventory'}
+            onPress={()=> console.log('Existing')}  
+          />
+        </View>
     </View>
     )
 }
